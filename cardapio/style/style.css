@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#logo {
+width: 300px;
+height: 60%;
+}
+
+#header{
+    background-color: white;
+}
+
+#superior{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: azure;
+    border-bottom: 5px solid black;
+    border-radius: 50px;
+}
+
+.elemento{
+    border-right: 5px solid black;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+#cardapio{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+
+
+h1{
+    padding-left: 100px;
+    color: black;
+}
+
+
+.bloco1{
+    background-color: rgb(255, 219, 0);
+}
+
+.bloco2{
+    background-color: rgb(red, green, blue);
+}
+
+.bloco3{
+    background-color: red;
+}
+
+
+.comida{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+
+
+.prato{
+    border: 5px solid black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font:bold;
+}
+
+
+
+#lanches{
+    background-color: rgb(255, 219, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#acompanhamentos{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#sobremesas{
+    background-color: ;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+#Cardapio p{
+    font-style: bold;
+}
+
+
+
+
+
+
+footer{
+    background-color: rgb(60, 59, 59);
+    height: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer{
+    background-color: rgb(60, 59, 59);
+    display: grid;
+    grid-template-rows: repeat(2, 20hv);
+
+}
+
+#pessoal{
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding-left: 100px;
+}
+
+#contato{
+    background-color: rgb(60, 59, 59);
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+#pessoal p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: smaller;
+    background-color: rgb(60, 59, 59);
+}
+
+
+i {
+    size: 35px;
+}
+
+#imagem_final{
+    background-color: rgb(60, 59, 59);
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+#logo_baixo{
+    background-color: rgb(60, 59, 59);
+    height: 80px;
+}
+
+#parap{
+    background-color: rgb(60, 59, 59);
+    padding-left: 50px;
+}
+
+ @media (max-width: 860px){
+
+    #lanches{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #acompanhamentos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #sobremesas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #check:checked ~ #menu{
+        display: block;
+    }
+ }
+
+
+ @media (max-width: 550px){
+ 
+    #lanches{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #acompanhamentos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #sobremesas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    
+    }
+
+    #menu{
+        display: none;
+    }
+   
+}
